@@ -37,44 +37,59 @@ Files Description:
 2. Derived 5 business insights from the EDA.
 
 Deliverables:
+
 ● A Python script containing with EDA code.
+
 ● A PDF report with business insights.
 
 
 **Task 2: Lookalike Model**
 Build a Lookalike Model that takes a user's information as input and recommends 3 similar customers based on their profile and transaction history. 
+
 The model should:
+
 ● Use both customer and product information.
+
 ● Assign a similarity score to each recommended customer.
 
 Deliverables:
+
 ● Give the top 3 lookalikes with there similarity scores for the first 20 customers (CustomerID: C0001 - C0020) in Customers.csv. Form an “Lookalike.csv” 
 which has just one map: Map<cust_id, List<cust_id, score>>
 
 Evaluation Criteria:
+
 ● Model accuracy and logic.
+
 ● Quality of recommendations and similarity scores.
 
 
 **Task 3: Customer Segmentation / Clustering**
 Perform customer segmentation using clustering techniques. Use both profile information (from Customers.csv) and transaction information (from Transactions.csv).
+
 ● clustering algorithm and any number of clusters in between(2 and 10)
+
 ● Visualise your clusters using relevant plots.
 
 Deliverables:
+
 ● A report on your clustering results, including:
 ○ The number of clusters formed.
 ○ DB Index value.
 ○ Other relevant clustering metrics.
+
 ● A Python script containing your clustering code.
 
 Evaluation Criteria:
+
 ● Clustering logic and metrics.
+
 ● Visual representation of clusters.
 
 **Clustering Approach**
 We used three clustering techniques to segment customers:
 1.	K-Means Clustering: This algorithm divides data into a fixed number of clusters, where each customer belongs to the closest cluster center. We tried different numbers of clusters (from 2 to 10) to identify the best fit.
+   
 2.	DBSCAN (Density-Based Spatial Clustering of Applications with Noise): DBSCAN groups points that are close to each other, identifying clusters based on density. It also marks outliers as noise.
 
 Visualized the clustering results using Principal Component Analysis (PCA), which reduces the data to two dimensions. This helped us plot and visually inspect how well the clusters were separated. Each customer was assigned a color based on their cluster, making it easy to see the groupings.
